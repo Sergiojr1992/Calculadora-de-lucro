@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Calculo lucro</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+
+            <h1>Calcular lucro</h1>
+
+            <p>Digite as informções</p>
+
+            <label for="txt1">Quanto quer ter de lucro:</label> <input type="number" id="lu"><br />
+
+            <label for="txt2">Preço que pagou no produto:</label> <input type="number" id="pro"><br />
+
+            <button onclick="botao_click()">Calcular</button>
+        </div>
+    </div>
+
+
+    <script>
+
+        function botao_click() {
+
+
+            var lucro = document.getElementById("lu").value;
+            var caixa1 = parseFloat(lucro);
+
+            var produto = document.getElementById("pro").value;
+            var caixa2 = parseFloat(produto);
+
+            var numero = 100 - caixa1;
+
+            var percentual = numero;
+
+            var decimal = percentual / 100;
+
+            var numero2 = caixa2 / decimal;
+
+            var final = numero2
+
+            var valorFormatado = final.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+            var mensagem = "O valor Do produto para Revenda é de R$:" + valorFormatado + " Reais";
+
+            alert(mensagem);
+
+        }
+
+    </script>
+
+</body>
+</html>
