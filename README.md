@@ -11,7 +11,7 @@ Este projeto é uma calculadora simples de lucro desenvolvida em HTML.
 3. Veja o resultado do lucro automaticamente.
 
 ## 🛠 Tecnologias
-- HTML5
+- HTML, CSS, JavaScript
 
 ---
 
